@@ -27,7 +27,10 @@ jobs:
             ghcr.io/${{ github.repository }}:latest
             ghcr.io/${{ github.repository }}:${{ github.sha }}
       - name: Update GitOps repository
-        shell: bash
+        
+        #shell: bash
+        shell: C:\Windows\System32\bash.exe
+        
         env:
           GIT_TOKEN: ${{ secrets.GITOPS_PAT }}
         run: |

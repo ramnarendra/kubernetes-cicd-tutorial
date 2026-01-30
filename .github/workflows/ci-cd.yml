@@ -43,6 +43,7 @@ jobs:
           git clone https://github.com/ramnarendra/grade-api-gitops.git gitops
           cd gitops
 
+          echo "ZZZZZZZ cat deployment.yaml"
           cat deployment.yaml
           
           if [[ "$OSTYPE" == "darwin"* ]]; then

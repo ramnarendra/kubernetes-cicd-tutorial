@@ -28,8 +28,8 @@ jobs:
             ghcr.io/${{ github.repository }}:${{ github.sha }}
       - name: Update GitOps repository
         
-        #shell: bash
-        shell: C:\Windows\System32\bash.exe
+        shell: bash
+        #shell: C:\Windows\System32\bash.exe
         
         env:
           GIT_TOKEN: ${{ secrets.GITOPS_PAT }}
